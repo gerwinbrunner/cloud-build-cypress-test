@@ -1,0 +1,18 @@
+{
+  "name": "gcp-cypress-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^12.7.0"
+  },
+  "scripts": {
+    "test": "npx cypress run",
+    "cypress:open": "cypress open --e2e --browser chrome",
+    "cypress:run": "cypress run -b chrome --config video=false --reporter-options 'mochaFile=cypress/test-reports/cypress-results-full-[hash].xml,toConsole=true'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
