@@ -10,7 +10,7 @@ steps:
   ###
   # Run cypress tests
   #
-  - name: 'cypress/included'
+  - name: 'cypress/included:12.6.0'
     waitFor: 
       - install-dependencies
     id: run-tests
