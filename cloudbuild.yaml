@@ -1,0 +1,20 @@
+steps:
+  ###
+  # Install dependencies
+  #
+  - name: 'gcr.io/cloud-builders/npm'
+    id: install-dependencies
+    entrypoint: 'npm'
+    args:
+      - 'install'
+  ###
+  # Run cypress tests
+  #
+  - name: 'cypress/base'
+    waitFor: 
+      - install-dependencies
+    id: run-tests
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - 'npm cypress:run'
