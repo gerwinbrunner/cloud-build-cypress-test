@@ -17,4 +17,4 @@ steps:
     entrypoint: 'bash'
     args:
       - '-c'
-      - 'npm cypress:run'
+      - 'npm run cypress:run'
